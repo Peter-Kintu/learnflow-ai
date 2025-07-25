@@ -1,0 +1,141 @@
+Step 1: Feature Set (Minimum Viable Product)
+
+Here’s the MVP — just enough to wow judges and still be doable by July 31.
+
+👨‍🎓 Student Flutter App Features
+
+📘 1. Offline Lesson Viewer
+
+Local JSON files or SQLite to store lessons (e.g., Math, English)
+
+Each lesson includes:
+
+Title
+
+Explanation
+
+Practice questions (MCQs or short answer)
+
+🧠 2. AI-Based Quiz Feedback
+
+MCQ: Model classifies right/wrong based on choices
+
+Short answer: Model gives feedback score (e.g., 0–3 stars) + suggestion
+
+AI runs on-device using TFLite or basic rule logic
+
+🧭 3. Smart Recommendation Engine
+
+Based on quiz performance, app recommends:
+
+“Retry this topic”
+
+“Go to the next level”
+
+“Review Topic A”
+
+💾 4. Local Data Storage
+
+Use SQLite or Hive for:
+
+Student name
+
+Lessons completed
+
+Quiz results
+
+AI feedback
+
+🔁 5. Sync System
+
+Sync to Django backend via:
+
+Wi-Fi
+
+Mobile hotspot
+
+Manual export (optional)
+
+👩‍🏫 Teacher Django Web Dashboard
+
+🗂 1. Student Progress Dashboard
+
+List of students
+
+Quiz completion records
+
+Feedback + Recommendations
+
+📤 2. Content Management
+
+Upload new lessons + quizzes
+
+Download progress reports
+
+View unsynced/pending data
+
+🧠 Step 2: Folder Structure (Starter Template)
+
+learnflow_ai/
+
+├── flutter_app/
+
+│ └── lib/
+
+│ ├── models/ # Lesson, Quiz, Feedback models
+
+│ ├── screens/ # Home, Quiz, Result, Recommendation
+
+│ ├── services/ # AI logic, local storage, sync manager
+
+│ └── main.dart
+
+├── django_backend/
+
+│ ├── api/ # DRF views and serializers
+
+│ ├── students/ # Models for user + progress
+
+│ ├── content/ # Upload lessons, quizzes
+
+│ └── manage.py
+
+├── ai_models/
+
+│ ├── mcq_classifier.tflite
+
+│ └── text_feedback.onnx
+
+├── docs/
+
+│ ├── system_architecture.md
+
+│ └── demo_script.txt
+
+🛠️ Step 3: Let’s Build the Backend API (Django)
+
+Would you like me to:
+
+
+
+Generate the Django models and REST API for you now?
+
+Or do you want to start with Flutter?
+
+I suggest we start with Django first, to define the structure and sync endpoints.
+
+If you're ready, I’ll now:
+
+
+
+✅ Create Django models (Student, Quiz, Answer, Feedback)
+
+
+
+✅ Create REST endpoints (Login, Get Lessons, Post Progress)
+
+
+
+✅ Show you how to sync Flutter with these APIs
+
+Ready to start Django backend? Just say:
